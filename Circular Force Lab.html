@@ -1,0 +1,112 @@
+
+<!-- saved from url=(0082)https://www.thephysicsaviary.com/Physics/Programs/Labs/CircularForceLab/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<!-- style sheet that has stuff that is unique to this program only-->
+	<link rel="stylesheet" type="text/css" href="./Circular Force Lab_files/stylings.css">
+	
+	<!-- style sheet that has stuff that is uniform on most pages-->
+	<link rel="stylesheet" type="text/css" href="./Circular Force Lab_files/stylings(1).css">
+	
+	<script async="" src="./Circular Force Lab_files/analytics.js"></script><script type="text/javascript" src="./Circular Force Lab_files/javascript.js"></script>
+	
+	<title>Circular Force Lab</title>
+</head>
+
+<body onload="initialize();">
+
+<div id="FullPage">
+
+	<div id="MainBody">
+	
+		<div id="ProgramTitle" class="Titles" onclick="document.location=&#39;../../index.html&#39;;">Circular Force Lab</div>
+		
+		<div id="OverviewSection" style="visibility: hidden;">
+			<img id="OverviewPicture" src="./Circular Force Lab_files/OverviewPicture.png" alt="Overview Picture for Circular Motion Lab" width="800" height="618">
+			<div id="LabDirections" class="Directions">
+				For this lab you will be looking at the force necessary to hold a hover disk in circular motion based on the speed of the disk, the radius of the circle and the mass of the disk.  Click on the "BEGIN" button below to start the lab.
+				<br><br>
+				Use the arrows to adjust the mass and radius. Generate new speeds when you want to see how speed influences tension. Then use the force probe to determine the tension in the string.
+			</div>
+		</div>
+		
+		<div id="LabSection" style="visibility: visible;">
+			<div id="DrawingSection">
+				<canvas id="CanvasOne" width="900" height="600" style="border:1px solid #c3c3c3;">
+					Your browser does not support HTML 5.0 Canvas...get a better browser!!!
+				</canvas>
+				<div id="StartButton" class="Button" onclick="StartIt()" style="visibility: visible;">Start</div>
+				<div id="StopButton" class="Button" onclick="StopIt()" style="visibility: hidden;">Stop</div>
+				<div id="ForceProbe">0.00 N</div>
+			</div>
+			<div id="StopWatchSection">
+				<div id="TimerStartButton" class="smallbutton" onclick="starttimer()">Start Timer</div>
+				<div id="TimerStopButton" class="smallbutton" onclick="stoptimer()">Stop Timer</div>
+				<div id="TimerResetButton" class="smallbutton" onclick="resettimer()">Reset Timer</div>
+			</div>
+			<div id="DashBoardSection">
+			
+				<div id="ReadOuts">
+				
+					<div id="SpeedReadOut" class="DashboardReadOut">
+						<div class="DashboardTitle">Velocity</div>
+						<div id="SpeedText" class="ReadOut">Velocity #: 1</div>
+					</div>
+					
+					<div id="MassReadOut" class="DashboardReadOut">
+						<div class="DashboardTitle">Mass (kg)</div>
+						<div id="MassText" class="ReadOut">1.50</div>
+					</div>
+					
+					<div id="RadiusReadOut" class="DashboardReadOut">
+						<div class="DashboardTitle">Radius (m)</div>
+						<div id="RadiusText" class="ReadOut">1.50</div>
+					</div>
+					
+				</div>
+				
+				<div id="Controls">
+				
+					<div id="SpeedControl" class="DashboardControl">
+						<img id="RandomSpeedButton" src="./Circular Force Lab_files/speedbutton.png" onclick="SpeedChange()">
+					</div>
+					
+					<div id="MassControl" class="DashboardControl">
+						
+						<div class="downarrow10x"><img src="./Circular Force Lab_files/downarrowblue10x.png" onclick="MassChange(-.1)"></div>
+						<div class="downarrow"><img src="./Circular Force Lab_files/downarrowblue.png" onclick="MassChange(-.01)"></div>
+						<div class="uparrow"><img src="./Circular Force Lab_files/uparrowblue.png" onclick="MassChange(.01)"></div>
+						<div class="uparrow10x"><img src="./Circular Force Lab_files/uparrowblue10x.png" onclick="MassChange(.1)"></div>
+						
+					</div>
+					
+					<div id="RadiusControl" class="DashboardControl">
+						
+						<div class="downarrow10x"><img src="./Circular Force Lab_files/downarrowgreen10x.png" onclick="RadiusChange(-.5)"></div>
+						<div class="downarrow"><img src="./Circular Force Lab_files/downarrowgreen.png" onclick="RadiusChange(-.1)"></div>
+						<div class="uparrow"><img src="./Circular Force Lab_files/uparrowgreen.png" onclick="RadiusChange(.1)"></div>
+						<div class="uparrow10x"><img src="./Circular Force Lab_files/uparrowgreen10x.png" onclick="RadiusChange(.5)"></div>
+						
+					</div>
+					
+				</div>
+				
+			</div>
+			<div id="BeginButton" class="Button" onclick="LoadIt()" style="visibility: hidden;">Begin</div>
+			
+		</div>
+</div>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-450349-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+</div></body></html>

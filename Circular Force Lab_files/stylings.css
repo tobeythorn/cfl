@@ -1,0 +1,276 @@
+/* This is for any unique stylings that apply only to this program */
+
+/* This ID is for entire area of the program you will see before the actual simulation section is displayed */
+
+#OverviewSection{
+	position: absolute;
+	top: 75px;
+	left: 50px;
+	width: 900px;
+	height: 800px;
+	border: black;
+	border-style: dashed;
+	border-width: 5px;
+}
+
+#OverviewPicture{
+	position: absolute;
+	top: 200px;
+	left: 50px;
+}
+
+#LabDirections{
+	position: absolute;
+	top: 25px;
+	left: 50px;
+	width: 800px;
+}
+
+.Directions{
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:16pt;
+	color:#000000;
+	text-align: center;
+}
+
+/* This ID is for entire area of the program that will display as part of the simulation */
+
+#LabSection{
+	position: absolute;
+	top: 75px;
+	left: 0px;
+	visibility: hidden;
+}
+
+
+#DrawingSection{
+	position: absolute;
+	top: 0px;
+	width: 900px;
+	left: 50px;
+	height: 600px;
+	border: black;
+	border-style: dashed;
+	border-width: 5px;
+}
+
+#StopWatchSection{
+	position: absolute;
+	top: 15px;
+	width: 300px;
+	left: 540px;
+	height: 30px;
+}
+
+#TimerStartButton{
+	position: absolute;
+	top: 0px;
+	left: 50px;
+	visibility: hidden;
+}
+
+#TimerStopButton{
+	position: absolute;
+	top: 0px;
+	left: 50px;
+	visibility: hidden;
+}
+
+#TimerResetButton{
+	position: absolute;
+	top: 0px;
+	left: 50px;
+	visibility: hidden;
+}
+
+.smallbutton{
+	height: 30px;
+	width: 100px;
+	background-color: #AAAAAA;
+	border: 1px #990000 solid;
+	border-radius: 5px;
+	text-align: center;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:18px;
+	color:#990000;
+}
+
+
+
+/* This ID is for the entire area of the program that has the controls for speed, angle and height */
+
+#DashboardSection{
+	position: absolute;
+	top: 600px;
+	width: 900px;
+	left: 50px;
+	height: 200px;
+	margin-top: 10px;
+	border: black;
+	border-style: solid;
+	border-width: 5px;
+	background-color: #AAAAAA;
+}
+
+#ReadOuts{
+	position: absolute;
+	top: 0px;
+	height: 50px;
+	width: 900px;
+}
+
+#MassReadOut{
+	left:0px;
+}
+
+#SpeedReadOut{
+	left:300px;
+}
+
+#RadiusReadOut{
+	left:600px;
+}
+
+.DashboardReadOut{
+	position: absolute;
+	top: 20px;
+	width: 300px;
+}
+
+.DashboardTitle{
+	position: absolute;
+	top: 0px;
+	width: 300px;
+	text-align: center;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:x-large;
+	color:#990000;
+
+}
+
+.ReadOut{
+	position: absolute;
+	top: 30px;
+	width: 300px;
+	text-align: center;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:x-large;
+	color:#990000;
+
+}
+
+#Controls{
+	position: absolute;
+	top: 0px;
+	height: 75px;
+	width: 900px;
+}
+
+
+#MassControl{
+	left:0px;
+}
+
+#SpeedControl{
+	left:300px;
+}
+
+#RadiusControl{
+	left:600px;
+}
+
+.DashboardControl{
+	position: absolute;
+	top: 20px;
+	width: 300px;
+}
+
+
+.downarrow10x{
+	position: absolute;
+	top: 70px;
+	left: 20px;
+}
+
+
+.downarrow{
+	position: absolute;
+	top: 70px;
+	left: 100px;
+}
+
+.uparrow{
+	position: absolute;
+	top: 70px;
+	right: 100px;
+}
+
+.uparrow10x{
+	position: absolute;
+	top: 70px;
+	right: 20px;
+}
+
+#RandomSpeedButton{
+	position: absolute;
+	top: 100px;
+	left: 100px;
+}
+
+#ForceProbe{
+	position: absolute;
+	top: 500px;
+	left: 375px;
+	height: 65px;
+	width: 150px;
+	background-color: #666666;
+	border: black;
+	border-style: solid;
+	border-width: 5px;
+	border-radius: 5px;
+	text-align: center;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:36px;
+	color:#CCCCCC;
+	padding-top: 10px;
+}
+
+#BeginButton{
+	position: absolute;
+	top: 650px;
+	left: 650px;
+	width: 150px;
+
+	visibility: visible;
+}
+
+#StartButton{
+	position: absolute;
+	top: 15px;
+	right: 50px;
+	width: 150px;
+
+	visibility: hidden;
+}
+
+#StopButton{
+	position: absolute;
+	top: 15px;
+	right: 50px;
+	width: 150px;
+
+	visibility: hidden;
+}
+
+.Button{
+	height: 50px;
+	background-color: #AAAAAA;
+	border: 4px #990000 solid;
+	border-radius: 10px;
+	text-align: center;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:36px;
+	color:#990000;
+}
+
+
